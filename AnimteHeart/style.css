@@ -1,0 +1,49 @@
+/* QAQNUSS  */
+
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    height: 100vh;
+    background: #000;
+}
+
+body h1 {
+    color: chartreuse;
+    text-align: center;
+    font-style: oblique;
+    font-weight: lighter;
+}
+
+/* QAQNUSS */
+
+span {
+    position: absolute;
+    background: url('heart.png');
+    background-size: cover;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    animation: animate 3s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        display: none;
+        filter: hue-rotate(0deg);
+    }
+    100% 
+    {
+        transform: translate(-50%, -1000%);
+        opacity: 0;
+        filter: hue-rotate(720deg);
+    }
+
+}
+
+/* QAQNUSS  */
